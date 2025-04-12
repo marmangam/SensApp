@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    En este archivo se define la navegación de la aplicación.
+    Se define el destino inicial como el fragmento de DatosFragment.
+    Se definen todos los fragmentos y las navegaciones usadas entre ellos
+    -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_datos">
+
+    <fragment
+        android:id="@+id/nav_datos"
+        android:name="com.example.appresponsables.ui.datos.DatosFragment"
+        android:label="@string/menu_datos"
+        tools:layout="@layout/fragment_datos" />
+
+    <fragment
+        android:id="@+id/nav_eventos"
+        android:name="com.example.appresponsables.ui.eventos.EventosFragment"
+        android:label="@string/menu_eventos"
+        tools:layout="@layout/fragment_eventos" >
+        <action
+            android:id="@+id/action_nav_eventos_to_nav_eventos_editar"
+            app:destination="@id/nav_eventos_editar" />
+        <action
+            android:id="@+id/action_nav_eventos_to_nav_eventos_crear"
+            app:destination="@id/nav_eventos_crear" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_eventos_editar"
+        android:name="com.example.appresponsables.ui.eventos.EventosEditarFragment"
+        android:label="@string/menu_eventos"
+        tools:layout="@layout/fragment_editar_eventos" />
+
+    <fragment
+        android:id="@+id/nav_eventos_crear"
+        android:name="com.example.appresponsables.ui.eventos.EventosCrearFragment"
+        android:label="@string/menu_eventos"
+        tools:layout="@layout/fragment_crear_eventos" >
+
+        <action
+            android:id="@+id/action_nav_eventos_crear_to_nav_eventos_editar"
+            app:destination="@id/nav_eventos_editar" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_alarmas"
+        android:name="com.example.appresponsables.ui.alarmas.AlarmasFragment"
+        android:label="@string/menu_alarmas"
+        tools:layout="@layout/fragment_alarmas" >
+        <action
+            android:id="@+id/action_nav_alarmas_to_nav_alarmas_editar"
+            app:destination="@id/nav_alarmas_editar" />
+        <action
+            android:id="@+id/action_nav_alarmas_to_nav_alarmas_crear"
+            app:destination="@id/nav_alarmas_crear" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_alarmas_editar"
+        android:name="com.example.appresponsables.ui.alarmas.AlarmasEditarFragment"
+        android:label="@string/menu_alarmas"
+        tools:layout="@layout/fragment_editar_alarmas" />
+
+    <fragment
+        android:id="@+id/nav_alarmas_crear"
+        android:name="com.example.appresponsables.ui.alarmas.AlarmasCrearFragment"
+        android:label="@string/menu_alarmas"
+        tools:layout="@layout/fragment_crear_alarmas" >
+        <action
+            android:id="@+id/action_nav_alarmas_crear_to_nav_alarmas_editar"
+            app:destination="@id/nav_alarmas_editar" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_incidencias"
+        android:name="com.example.appresponsables.ui.incidencias.IncidenciasFragment"
+        android:label="@string/menu_incidencias"
+        tools:layout="@layout/fragment_incidencias" >
+        <action
+            android:id="@+id/action_nav_incidencias_to_nav_detalle_incidencias"
+            app:destination="@id/nav_detalle_incidencias" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_detalle_incidencias"
+        android:name="com.example.appresponsables.ui.incidencias.IncidenciasDetalleFragment"
+        android:label="@string/menu_incidencias"
+        tools:layout="@layout/fragment_detalle_incidencias" />
+
+    <fragment
+        android:id="@+id/nav_usuario"
+        android:name="com.example.appresponsables.ui.usuario.UsuarioFragment"
+        android:label="@string/menu_usuario"
+        tools:layout="@layout/fragment_usuario" >
+        <action
+            android:id="@+id/action_nav_usuario_to_nav_responsables"
+            app:destination="@id/nav_responsables" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_responsables"
+        android:name="com.example.appresponsables.ui.responsables.ResponsablesFragment"
+        android:label="@string/menu_responsables"
+        tools:layout="@layout/fragment_responsables" />
+</navigation>

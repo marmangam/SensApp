@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Menu oculto de la aplicación.
+    Contiene un único elemento, usado para cerrar sesión.
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_cerrar"
+        android:orderInCategory="100"
+        android:title="@string/action_cerrar"
+        app:showAsAction="never"
+        android:onClick="boton_cerrar"/>
+</menu>

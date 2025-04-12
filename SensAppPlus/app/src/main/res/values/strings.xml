@@ -1,0 +1,28 @@
+<resources>
+    <!--  En este archivo se definen las cadenas de texto utilizadas en la aplicación. -->
+    <string name="app_name">SensApp Plus</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="IP">http://192.168.9.133:8080/</string>
+    <string name="IPlocal">http://3.87.194.221:8080/</string>
+
+    <string name="menu_usuarios">Ver usuarios</string>
+    <string name="menu_add_usuarios">Añadir usuarios</string>
+    <string name="menu_incidencias">Ver incidencias</string>
+    <string name="menu_operadores">Ver operadores</string>
+    <string name="menu_datos_administrativos">Mis datos</string>
+    <string name="menu_datos_operadores">Mis datos</string>
+    <string name="menu_mis_incidencias">Mis incidencias</string>
+    <string name="menu_consultar_usuario">Ver usuarios</string>
+    <string name="menu_responsables">Responsables</string>
+    <string name="menu_atender">Atender</string>
+
+
+    <string name="action_cerrar">Cerrar sesión</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Menu de navegación de la parte de operadores de la aplicación.
+    Contiene varios elementos, cada uno representa una sección.
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_datos_operadores"
+            android:icon="@drawable/icono_datos"
+            android:title="@string/menu_datos_operadores" />
+        <item
+            android:id="@+id/nav_mis_incidencias"
+            android:icon="@drawable/icono_incidencia"
+            android:title="@string/menu_mis_incidencias" />
+        <item
+            android:id="@+id/nav_consultar_usuario"
+            android:icon="@drawable/icono_usuario"
+            android:title="@string/menu_consultar_usuario" />
+        <item
+            android:id="@+id/nav_atender"
+            android:icon="@drawable/icono_atender"
+            android:title="@string/menu_atender" />
+    </group>
+</menu>

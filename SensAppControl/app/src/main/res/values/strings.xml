@@ -1,0 +1,64 @@
+<resources>
+    <!--   En este archivo se definen las cadenas de texto utilizadas en la aplicación. -->
+
+    <string name="app_name">SensApp Control</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="IP">http://192.168.9.133:8080/</string>
+    <string name="IPlocal">http://54.165.243.199:8080/</string>
+
+
+    <string name="menu_datos">Datos</string>
+    <string name="menu_eventos"> Eventos</string>
+    <string name="menu_alarmas">Alarmas</string>
+    <string name="menu_incidencias">Ver Incidencias</string>
+    <string name="menu_usuario">Ver usuario</string>
+    <string name="menu_responsables">Ver Responsables</string>
+    <string name="action_cerrar">Cerrar sesión</string>
+    <string name="boton_datos">Mis datos</string>
+
+    <string-array name="tipos_array">
+        <item>Alimentar mascota</item>
+        <item>Control Glucosa</item>
+        <item>Control Tensión</item>
+        <item>Cuidado personal</item>
+        <item>Ejercicio</item>
+        <item>Medicamento</item>
+        <item>Otros</item>
+        <item>Pastilla</item>
+        <item>Pomada</item>
+        <item>Revisar Enchufes</item>
+        <item>Revisar Grifos</item>
+        <item>Suplementos</item>
+    </string-array>
+
+    <string-array name="tipos_eventos_array">
+        <item>Actividad Física</item>
+        <item>Celebración</item>
+        <item>Cita Médica</item>
+        <item>Compra</item>
+        <item>Cumpleaños</item>
+        <item>Entretenimiento</item>
+        <item>Evento Deportivo</item>
+        <item>Evento Religioso</item>
+        <item>Medicamento</item>
+        <item>Otro</item>
+        <item>Recado</item>
+        <item>Renovación Documentos</item>
+        <item>Reunión</item>
+        <item>Reunión Familiar</item>
+        <item>Tarea Doméstica</item>
+        <item>Trámites</item>
+        <item>Veterinario</item>
+        <item>Viaje</item>
+        <item>Visita</item>
+        <item>Visita Domiciliaria</item>
+    </string-array>
+
+
+</resources>

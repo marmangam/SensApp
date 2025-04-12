@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shape  utilizado como forma de los elementos de la lista de eventos-->
+    <corners android:radius="16dp" />
+
+</shape>

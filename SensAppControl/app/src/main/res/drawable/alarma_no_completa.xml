@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shape  utilizado como forma de los elementos no completados de la lista de alarmas-->
+    <solid android:color="@color/nocompletado" />
+    <corners android:radius="16dp" />
+
+</shape>

@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shape  utilizado como forma de los operadores no activos-->
+
+    <solid android:color="@color/no_activo" />
+
+    <corners android:radius="16dp" />
+
+</shape>

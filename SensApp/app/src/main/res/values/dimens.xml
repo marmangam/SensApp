@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    En este archivo se definen las dimensiones utilizadas en la aplicación.-->
+
+<resources>
+    <dimen name="recycler_view_alarma_margen">4dp</dimen>
+    <dimen name="recycler_view_evento_margen">4dp</dimen>
+</resources>

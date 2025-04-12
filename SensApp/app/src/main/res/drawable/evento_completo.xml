@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shape  utilizado como forma de los elementos completados de la lista de eventos-->
+    <solid android:color="@color/completado" />
+    <corners android:radius="16dp" />
+
+</shape>

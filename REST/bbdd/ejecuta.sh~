@@ -1,0 +1,15 @@
+#! /bin/sh
+
+## Borramos la base de datos
+echo Borramos la base de datos
+dropdb -U dit tfg
+
+## Creamos la base de datos
+echo Creamos la base de datos
+createdb -U dit tfg
+
+## Ejecutamos el script para insertar las tablas en la base de datos
+psql -U dit -d tfg -f sentencias.sql -a
+
+## Ejecutamos el script para insertar los datos iniciales en las tablas
+psql -U dit -d tfg -f sentenciasInsert.sql -a 

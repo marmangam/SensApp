@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--   En este archivo se definen los estilos utilizados en la aplicación. -->
+<resources>
+    <style name="TextoMenu">
+        <item name="android:textSize">30sp</item>
+    </style>
+</resources>

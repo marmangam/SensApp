@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shape  utilizado como forma de las incidencias no resueltas-->
+    <solid android:color="@color/noresuelta" />
+
+    <corners android:radius="16dp" />
+
+</shape>

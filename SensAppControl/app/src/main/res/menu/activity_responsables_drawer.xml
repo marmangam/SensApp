@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Menu de navegación de la aplicación.
+    Contiene varios elementos, cada uno representa una sección de la aplicación.
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:titleTextAppearance="@style/TextoMenu" >
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_datos"
+            android:icon="@drawable/icono_datos"
+            android:title="@string/menu_datos" />
+        <item
+            android:id="@+id/nav_eventos"
+            android:icon="@drawable/icono_evento"
+            android:title="@string/menu_eventos" />
+        <item
+            android:id="@+id/nav_alarmas"
+            android:icon="@drawable/icono_alarma"
+            android:title="@string/menu_alarmas" />
+        <item
+            android:id="@+id/nav_incidencias"
+            android:icon="@drawable/icono_incidencia"
+            android:title="@string/menu_incidencias" />
+        <item
+            android:id="@+id/nav_usuario"
+            android:icon="@drawable/icono_usuario"
+            android:title="@string/menu_usuario" />
+    </group>
+</menu>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    En este archivo se define la navegación de la parte de los administrativos de la aplicación.
+    Se define el destino inicial como el fragmento de DatosAdministrativosFragment.
+    Se definen todos los fragmentos y las navegaciones usadas entre ellos
+    -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_datos_administrativos">
+
+    <fragment
+        android:id="@+id/nav_datos_administrativos"
+        android:name="com.example.apptrabajadores.ui.datosAdministrativos.DatosAdministrativosFragment"
+        android:label="@string/menu_datos_administrativos"
+        tools:layout="@layout/fragment_datos_administrativos" />
+
+    <fragment
+        android:id="@+id/nav_usuarios"
+        android:name="com.example.apptrabajadores.ui.usuarios.UsuariosFragment"
+        android:label="@string/menu_usuarios"
+        tools:layout="@layout/fragment_usuarios" >
+        <action
+            android:id="@+id/action_nav_usuarios_to_nav_editar_usuarios"
+            app:destination="@id/nav_editar_usuarios" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_editar_usuarios"
+        android:name="com.example.apptrabajadores.ui.usuarios.UsuariosEditarFragment"
+        android:label="@string/menu_usuarios"
+        tools:layout="@layout/fragment_editar_usuarios" >
+        <action
+            android:id="@+id/action_nav_editar_usuarios_to_nav_responsables"
+            app:destination="@id/nav_responsables" />
+        <action
+            android:id="@+id/action_nav_editar_usuarios_self"
+            app:destination="@id/nav_editar_usuarios" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_responsables"
+        android:name="com.example.apptrabajadores.ui.responsables.ResponsablesFragment"
+        android:label="@string/menu_responsables"
+        tools:layout="@layout/fragment_responsables" >
+        <action
+            android:id="@+id/action_nav_responsables_to_nav_editar_responsables"
+            app:destination="@id/nav_editar_responsables" />
+        <action
+            android:id="@+id/action_nav_responsables_to_nav_crear_responsables"
+            app:destination="@id/nav_crear_responsables" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_editar_responsables"
+        android:name="com.example.apptrabajadores.ui.responsables.ResponsablesEditarFragment"
+        android:label="@string/menu_responsables"
+        tools:layout="@layout/fragment_editar_responsables" />
+    <fragment
+        android:id="@+id/nav_crear_responsables"
+        android:name="com.example.apptrabajadores.ui.responsables.ResponsablesCrearFragment"
+        android:label="@string/menu_responsables"
+        tools:layout="@layout/fragment_crear_responsables" />
+
+
+    <fragment
+        android:id="@+id/nav_crear_usuarios"
+        android:name="com.example.apptrabajadores.ui.usuarios.UsuariosCrearFragment"
+        android:label="@string/menu_add_usuarios"
+        tools:layout="@layout/fragment_crear_usuarios" >
+        <action
+            android:id="@+id/action_nav_crear_usuarios_to_nav_add_responsables"
+            app:destination="@id/nav_add_responsables" />
+        <action
+            android:id="@+id/action_nav_crear_usuarios_to_nav_usuarios"
+            app:destination="@id/nav_usuarios" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_add_responsables"
+        android:name="com.example.apptrabajadores.ui.responsables.ResponsablesAddFragment"
+        android:label="@string/menu_responsables"
+        tools:layout="@layout/fragment_add_responsables" >
+        <action
+            android:id="@+id/action_nav_add_responsables_to_nav_usuarios"
+            app:destination="@id/nav_usuarios" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_operadores"
+        android:name="com.example.apptrabajadores.ui.operadores.OperadoresFragment"
+        android:label="@string/menu_operadores"
+        tools:layout="@layout/fragment_operadores" >
+        <action
+            android:id="@+id/action_nav_operadores_to_nav_crear_operadores"
+            app:destination="@id/nav_crear_operadores" />
+        <action
+            android:id="@+id/action_nav_operadores_to_nav_editar_operadores"
+            app:destination="@id/nav_editar_operadores" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_crear_operadores"
+        android:name="com.example.apptrabajadores.ui.operadores.OperadoresCrearFragment"
+        android:label="@string/menu_operadores"
+        tools:layout="@layout/fragment_crear_operadores" >
+        <action
+            android:id="@+id/action_nav_crear_operadores_to_nav_editar_operadores"
+            app:destination="@id/nav_editar_operadores" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_editar_operadores"
+        android:name="com.example.apptrabajadores.ui.operadores.OperadoresEditarFragment"
+        android:label="@string/menu_operadores"
+        tools:layout="@layout/fragment_editar_operadores" >
+        <action
+            android:id="@+id/action_nav_editar_operadores_self"
+            app:destination="@id/nav_editar_operadores" />
+        <action
+            android:id="@+id/action_nav_editar_operadores_self2"
+            app:destination="@id/nav_editar_operadores" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_incidencias"
+        android:name="com.example.apptrabajadores.ui.incidencias.IncidenciasFragment"
+        android:label="@string/menu_incidencias"
+        tools:layout="@layout/fragment_incidencias" >
+        <action
+            android:id="@+id/action_nav_incidencias_to_nav_detalle_incidencias"
+            app:destination="@id/nav_detalle_incidencias" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_detalle_incidencias"
+        android:name="com.example.apptrabajadores.ui.incidencias.IncidenciasDetalleFragment"
+        android:label="@string/menu_incidencias"
+        tools:layout="@layout/fragment_detalle_incidencias" />
+</navigation>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- En este archivo se definen los colores utilizados en la aplicación. -->
+
+<resources>
+    <color name="purple_200">#E91E63</color>
+    <color name="purple_500">#645180</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="resuelta">#a5f349</color>
+    <color name="noresuelta">#DA5523</color>
+    <color name="fondos">#FF3700B3</color>
+    <color name="fondoclaro">#604695fa</color>
+    <color name="prueba">#647e94</color>
+    <color name="ocupado">#4646e7</color>
+    <color name="activo">#4de571</color>
+    <color name="no_activo">#e82626</color>
+</resources>

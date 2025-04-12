@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shape  utilizado como forma de los operadores ocupados -->
+
+    <solid android:color="@color/ocupado" />
+
+    <corners android:radius="16dp" />
+</shape>

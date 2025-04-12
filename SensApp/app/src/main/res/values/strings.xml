@@ -1,0 +1,9 @@
+<resources>
+    <!--
+    En este archivo se definen las cadenas de texto utilizadas en la aplicación. -->
+
+    <string name="app_name">SensApp</string>
+    <string name="IP"> http://192.168.9.133:8080/</string>
+    <string name="IPlocal">http://3.87.194.221:8080/</string>
+
+</resources>

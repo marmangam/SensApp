@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Layout vertical que representa la pantalla del fragmento EditarEventosFragment. -->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.eventos.EventosFragment">
+
+
+    <ImageView
+        android:id="@+id/imagen_evento"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="Imagen evento"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/evento_otro"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout_nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/imagen_evento">
+
+        <TextView
+            android:id="@+id/textNombre"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:width="90dp"
+            android:text="Nombre:"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/nombre_evento"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/textNombre"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:maxLength="20"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_tipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_nombre">
+
+
+        <Spinner
+            android:id="@+id/spinner_tipo_evento"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/textNombre"
+            android:background="@drawable/spinner_background"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_tipo">
+
+
+        <TextView
+            android:id="@+id/textFecha"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:width="90dp"
+            android:text="Fecha:"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="260dp"
+            android:layout_centerHorizontal="true"
+            android:datePickerMode="calendar" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/boton_editar_evento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar Evento"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_fecha" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

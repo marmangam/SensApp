@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    En este archivo se define la navegación de la parte de los operadores de la aplicación.
+    Se define el destino inicial como el fragmento de DatosOperadoresFragment.
+    Se definen todos los fragmentos y las navegaciones usadas entre ellos
+    -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_datos_operadores">
+
+    <fragment
+        android:id="@+id/nav_datos_operadores"
+        android:name="com.example.apptrabajadores.ui.datosOperadores.DatosOperadoresFragment"
+        android:label="@string/menu_datos_operadores"
+        tools:layout="@layout/fragment_datos_operadores" />
+
+    <fragment
+        android:id="@+id/nav_mis_incidencias"
+        android:name="com.example.apptrabajadores.ui.misIncidencias.MisIncidenciasFragment"
+        android:label="@string/menu_mis_incidencias"
+        tools:layout="@layout/fragment_mis_incidencias" >
+        <action
+            android:id="@+id/action_nav_mis_incidencias_to_nav_detalle_mi_incidencias"
+            app:destination="@id/nav_detalle_mi_incidencias" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_detalle_mi_incidencias"
+        android:name="com.example.apptrabajadores.ui.misIncidencias.MisIncidenciasDetalleFragment"
+        android:label="@string/menu_mis_incidencias"
+        tools:layout="@layout/fragment_detalle_incidencias" />
+
+    <fragment
+        android:id="@+id/nav_consultar_usuario"
+        android:name="com.example.apptrabajadores.ui.consultarUsuario.ConsultarUsuarioFragment"
+        android:label="@string/menu_consultar_usuario"
+        tools:layout="@layout/fragment_consultar_usuario" >
+        <action
+            android:id="@+id/action_nav_consultar_usuario_to_nav_lista_responsables"
+            app:destination="@id/nav_lista_responsables" />
+        <action
+            android:id="@+id/action_nav_consultar_usuario_to_nav_detalle_usuario"
+            app:destination="@id/nav_detalle_usuario" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_detalle_usuario"
+        android:name="com.example.apptrabajadores.ui.consultarUsuario.UsuarioDetalleFragment"
+        android:label="@string/menu_consultar_usuario"
+        tools:layout="@layout/fragment_detalle_usuario" >
+        <action
+            android:id="@+id/action_nav_detalle_usuario_to_nav_lista_responsables"
+            app:destination="@id/nav_lista_responsables" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_lista_responsables"
+        android:name="com.example.apptrabajadores.ui.responsables.ResponsablesListaFragment"
+        android:label="@string/menu_responsables"
+        tools:layout="@layout/fragment_lista_responsables" />
+
+    <fragment
+        android:id="@+id/nav_atender"
+        android:name="com.example.apptrabajadores.ui.atender.AtenderFragment"
+        android:label="@string/menu_atender"
+        tools:layout="@layout/fragment_atender" >
+        <action
+            android:id="@+id/action_nav_atender_to_nav_atendiendo"
+            app:destination="@id/nav_atendiendo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_atendiendo"
+        android:name="com.example.apptrabajadores.ui.atender.AtendiendoFragment"
+        android:label="@string/menu_atender"
+        tools:layout="@layout/fragment_atendiendo">
+        <action
+            android:id="@+id/action_nav_atendiendo_to_nav_atender"
+            app:destination="@id/nav_atender" />
+        <action
+            android:id="@+id/action_nav_atendiendo_self"
+            app:destination="@id/nav_atendiendo" />
+    </fragment>
+</navigation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    En este archivo se definen los colores utilizados en la aplicación. -->
+
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="completado">#51f276</color>
+    <color name="nocompletado">#f13812</color>
+    <color name="noeshora">#3755ff</color>
+    <color name="fondo">#228e3c</color>
+</resources>
